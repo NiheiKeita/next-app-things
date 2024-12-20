@@ -12,7 +12,7 @@ export const Match = React.memo<MatchProps>(function Match({
     React.Children.toArray(children).find(
       (child) =>
         React.isValidElement(child) &&
-        ((child.props.exp || child.props.otherwise) as boolean)
+        ((child.props.exp || child.props.otherwise))
     ) || <></>
   )
 })
